@@ -303,12 +303,16 @@
       
         
           
-            <h2 id="两列布局"><a href="#两列布局" class="headerlink" title="两列布局"></a>两列布局</h2><p>在这里，我想实现一个左边宽固定，右边占满剩余宽度的一个demo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			*&#123;</span><br><span class="line">				margin: 0;</span><br><span class="line">				padding: 0;</span><br><span class="line">			&#125;</span><br><span class="line">			body&#123;</span><br><span class="line">				min-width: 1280px;</span><br><span class="line">			&#125;</span><br><span class="line">			.left&#123;</span><br><span class="line">				float: left;</span><br><span class="line">				width: 400px;</span><br><span class="line">				height: 200px;</span><br><span class="line">				background: red;</span><br><span class="line">			&#125;</span><br><span class="line">			.right&#123;</span><br><span class="line">				overflow: hidden;</span><br><span class="line">				height: 200px;</span><br><span class="line">				background: yellow;</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class=&quot;box&quot;&gt;</span><br><span class="line">			&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;</span><br><span class="line">			&lt;div class=&quot;right&quot;&gt;&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<p>我们可以在控制台看到盒子的模型：<br>整个盒子的宽是1280px<br>左边是：宽400px<br>             高200px<br>右边是：宽880px（1280-400）<br>             高200px<br><img src="http://img.blog.csdn.net/20171111124937929?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlbmdRdW5CaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>原理：右边盒子触发bfc，使其不与左边盒子重叠。因此会重新计算宽度。<br>至于什么是bfc，可以看我的另外一个blog，这里不想扯太长。</p>
-
-          
+          两列布局在这里，我想实现一个左边宽固定，右边占满剩余宽度的一个demo
+123456789101112131415161718192021222324252627&lt;style type=&quot;text/css&quot;&gt;			*&#123;				margin: 0;				pa
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/05/网页布局之两列布局/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -426,18 +430,16 @@
       
         
           
-            <h2 id="下载sublime-text3"><a href="#下载sublime-text3" class="headerlink" title="下载sublime text3"></a>下载sublime text3</h2><p>直接百度sublime text3，根据自己的电脑下载对应的版本，然后安装即可。</p>
-<h2 id="给sublime-text3安装插件"><a href="#给sublime-text3安装插件" class="headerlink" title="给sublime text3安装插件"></a>给sublime text3安装插件</h2><p>插件：Emmet,  HTML-CS-JS Pretiffy,  Spacegray模板<br>理论上说，不安装插件，也可进行开发，但是插件可以极大的提高我们的工作效率，并且可以让我们的代码的格式更加整齐，更加易读。所以我们需要给它安装几个常用的插件。sublime本身没有管理插件的功能。但是我们可以安装pacakgecontrol，安装pacakgecontrol就可以对插件进行管理。</p>
-<ol>
-<li>安装packagecontrol<br>packagecontrol官方网址：<a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">https://packagecontrol.io/installation</a><br><img src="http://img.blog.csdn.net/20171020084821433?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlbmdRdW5CaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>按照步骤，打开sublime的控制台，将复制好的python代码粘贴。回车执行，安装完成，重新启动sublime text3。<br>打开sublime text3之后，我们点击preferences选择Package Control，选择Package Control：install Package，一会，就加载完成。</li>
-<li>安装emmet<br>安装完pacakge control之后，会出现<br><img src="http://img.blog.csdn.net/20171020090914400?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlbmdRdW5CaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>搜索emmet回车，emmet是用来编写html和css的插件，使用emmet，我们可以使用特殊的语法，来加快我们的编写。能实现下面的操作，即emmet安装完成。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div#test  tab键之后=&gt;  &lt;div id=&quot;test&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>3.安装html-css-js prettify<br>这个插件的作用，是将html，css，js文件的格式进行标准化。<br>preferances（首选项），然后选择Package Control（插件控制），选择<br>Package Control：install Package，输入插件的名字，选择，回车，安装。<br>4.安装 Spacegray模板<br>严格来说，spacegray模板并不能算是功能性的插件，只是用来改变编辑器的外观。<br>按照之前的那个安装步骤即可完成安装，模板安装完成之后需要手动的启用它。打开配置文件，preferences -&gt; setting user,然后我们需要加入一段启动主题的代码。<br>在spacegray的官方网站，可以看到如何激活spacegray的三中模板，我们选用一种<br><img src="http://img.blog.csdn.net/20171020094246332?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlbmdRdW5CaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p><img src="http://img.blog.csdn.net/20171020094259820?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvY2hlbmdRdW5CaW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>保存之后就可以了！</p>
-
-          
+          下载sublime text3直接百度sublime text3，根据自己的电脑下载对应的版本，然后安装即可。
+给sublime text3安装插件插件：Emmet,  HTML-CS-JS Pretiffy,  Spacegray模板理论上说，不安装插件，也可进行开发，但是插件可以极大的提高我们的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/05/sublime-text3的插件安装/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -555,9 +557,16 @@
       
         
           
-            <p>##第一个博客不知道写啥，先练练怎么写吧，走个流程，哈哈！</p>
+          ##第一个博客不知道写啥，先练练怎么写吧，走个流程，哈哈！
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/05/我的第一篇博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -675,17 +684,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/04/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
